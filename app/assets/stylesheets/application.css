@@ -42,6 +42,7 @@ body {
   width: 60%;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
 
 #main > h1::after {
@@ -55,6 +56,22 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 1;
+}
+
+#main #img1 {
+  height: 25rem;
+  width: 18.125rem;
+  position: absolute;
+  left: 3%;
+  top: 18%;
+}
+
+#main #img2 {
+  height: 25rem;
+  width: 19rem;
+  position: absolute;
+  right: 1.5%;
+  bottom: 6%;
 }
 
 #nav {
