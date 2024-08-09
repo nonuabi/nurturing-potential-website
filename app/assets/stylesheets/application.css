@@ -23,20 +23,23 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-
 #main {
   height: 100%;
+  width: 100%;
+  /* position: relative; */
+}
+
+#page1 {
   height: 100%;
-  background-color: white;
-  position: relative;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#main > h1 {
+#page1 > h1 {
   font-size: 5.4vw;
   font-weight: 100;
   text-transform: capitalize;
@@ -46,7 +49,7 @@ body {
   z-index: 1;
 }
 
-#main > h1::after {
+#page1 > h1::after {
   content: "";
   position: absolute;
   width: 35%;
@@ -59,7 +62,7 @@ body {
   z-index: 1;
 }
 
-#main #img1 {
+#page1 #img1 {
   height: 25rem;
   width: 18.125rem;
   position: absolute;
@@ -67,25 +70,24 @@ body {
   top: 18%;
 }
 
-#main #img2 {
+#page1 #img2 {
   height: 25rem;
   width: 19rem;
   position: absolute;
   right: 1.5%;
   bottom: 6%;
 }
-
-#main #img1 {
+#page1 #img1 {
   transition: margin 0.8s ease;
 }
-#main #img1:hover {
+#page1 #img1:hover {
   margin-top: -0.625rem;
 }
 
-#main #img2 {
+#page1 #img2 {
   transition: margin 0.8s ease;
 }
-#main #img2:hover {
+#page1 #img2:hover {
   margin-bottom: 10px;
 }
 
@@ -98,6 +100,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 99;
 }
 
 #nav > h1 {
@@ -142,4 +147,10 @@ body {
 
 #nav #part2 a:nth-last-child(1):hover #green {
   left: 0;
+}
+
+#page2 {
+  height: 70vh;
+  width: 100%;
+  background-color: red;
 }
