@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main > h1 {
+  font-size: 5.4vw;
+  font-weight: 100;
+  text-transform: capitalize;
+  width: 60%;
+  text-align: center;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6.25rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav > h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+#nav #part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav #part2 a {
+  text-decoration: none;
+  color: #222;
+  margin: 20px;
+}
+
+#nav #part2 a:nth-last-child(1) {
+  padding: 7px 18px;
+  border-radius: 2rem;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#nav #part2 a:nth-last-child(1) #green {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: springgreen;
+  transition: left 0.4s ease;
+}
+
+#nav #part2 a:nth-last-child(1) h5 {
+  position: relative;
+  z-index: 1;
+  font-weight: 100;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green {
+  left: 0;
+}
