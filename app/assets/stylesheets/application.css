@@ -74,6 +74,20 @@ body {
   bottom: 6%;
 }
 
+#main #img1 {
+  transition: margin 0.8s ease;
+}
+#main #img1:hover {
+  margin-top: -0.625rem;
+}
+
+#main #img2 {
+  transition: margin 0.8s ease;
+}
+#main #img2:hover {
+  margin-bottom: 10px;
+}
+
 #nav {
   position: fixed;
   top: 0;
