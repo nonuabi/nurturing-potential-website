@@ -19,10 +19,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 #main {
   height: 100%;
@@ -106,6 +109,7 @@ body {
 #nav > h1 {
   font-size: 2rem;
   font-weight: 100;
+  cursor: pointer;
 }
 
 #nav #part2 {
@@ -191,10 +195,10 @@ body {
 #page2 h1 span::after {
   content: "";
   position: absolute;
-  height: 70px;
-  width: 190px;
-  top: -20px;
-  right: -10.5%;
+  height: 65px;
+  width: 175px;
+  top: -15px;
+  right: -11%;
   background-image: url(https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/circle-orange.svg);
 }
 
