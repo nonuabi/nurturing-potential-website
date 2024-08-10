@@ -352,20 +352,20 @@ img {
   justify-content: space-between;
 }
 
-#contact-details #contact-heading {
+#contact-details #contact-heading span {
   font-size: 2rem;
   font-weight: 300;
   position: relative;
 }
-#contact-details #contact-heading::after {
+#contact-details #contact-heading span::after {
   content: "";
   position: absolute;
-  width: 10%;
-  height: 10px;
+  min-width: 100%;
+  min-height: 10px;
   background-image: url(https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/underline-orange.svg);
   background-size: cover;
   bottom: -8%;
-  left: 26%;
+  left: 46%;
   transform: translate(-50%, 0);
 }
 
