@@ -27,6 +27,12 @@ body {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
 }
+
+.disabled-link {
+  cursor: not-allowed;
+  color: grey !important;
+}
+
 #main {
   height: 100%;
   width: 100%;
