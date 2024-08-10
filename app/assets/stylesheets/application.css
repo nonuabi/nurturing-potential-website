@@ -241,7 +241,7 @@ img {
 
 /* contact form */
 #container {
-  margin-top: 6.25rem;
+  margin-top: 7.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,7 +250,7 @@ img {
 }
 
 #container #left-section {
-  width: 30%;
+  width: 45%;
   min-height: 400px;
   position: relative;
 }
@@ -259,8 +259,8 @@ img {
   height: 30rem;
   width: 25em;
   position: absolute;
-  left: -20%;
-  top: -5%;
+  left: 15%;
+  top: -8%;
 }
 
 #left-section img {
@@ -337,4 +337,66 @@ img {
 #form-action input:hover {
   background-color: black;
   color: white;
+}
+
+#contact-details-section {
+  padding: 5.625rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contact-details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact-details #contact-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+}
+#contact-details #contact-heading::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10px;
+  background-image: url(https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/underline-orange.svg);
+  background-size: cover;
+  bottom: -8%;
+  left: 26%;
+  transform: translate(-50%, 0);
+}
+
+#contact-details #contact-subheading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(140, 140, 140, 1);
+  line-height: 1.5;
+}
+
+#contact-details #detail-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+#detail-sections div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#detail-sections div h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+#detail-sections #phone-number,
+#email-address {
+  margin-top: 1rem;
 }
