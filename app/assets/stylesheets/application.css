@@ -181,16 +181,20 @@ body {
   text-align: center;
   font-weight: 100;
   margin: 1.625rem 0;
-  position: relative;
 }
 
-#page2 h1::after {
+#page2 h1 span {
+  position: relative;
+  white-space: nowrap;
+}
+
+#page2 h1 span::after {
   content: "";
   position: absolute;
   height: 70px;
   width: 190px;
   top: -20px;
-  right: 10.5%;
+  right: -10.5%;
   background-image: url(https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/circle-orange.svg);
 }
 

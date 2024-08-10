@@ -16,7 +16,7 @@
     </div>
   </div>
   <section id="page1">
-    <h1> Empowering Growth & Learning </h1>
+    <h1 id="heading1"> Empowering Growth & Learning </h1>
     <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/img1.jpg" alt="img2" id="img1">
     <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/tinkle_cover.jpeg" alt="img1" id="img2">
   </section>
@@ -26,7 +26,7 @@
     </h5>
     <h1>
       our mission is to help every person
-      reach their full potential.
+      reach their <span> full potential</span>.
       <br>
       We do this by offering personalized support and encouraging group sessions.
       <br>
@@ -44,9 +44,9 @@
   // Page 1 animations
   gsap.from("#img1", {duration: 2, x: -200, opacity: 0, scale: 0.5});
   gsap.from("#img2", {duration: 2, x: 200, opacity: 0, scale: 0.5});
-  gsap.from("#page1 > h1", {duration: 2, y: -200, opacity: 0, scale: 0.5});
+  gsap.from("#page1 #heading1", {duration: 2, y: -200, opacity: 0, scale: 0.5});
 
   // Page 2 animations
-  gsap.from("#page2 > h5", {opacity: 0, duration: 2,
-  scrollTrigger: {trigger: "#page2 > h5", scrollerf: "body", start: "top 80%"}});
+  gsap.from("#page2 h5", {opacity: 0, duration: 2,
+  scrollTrigger: {trigger: "#page2 h5", scroller: "body", start: "top 80%"}});
 </script>
