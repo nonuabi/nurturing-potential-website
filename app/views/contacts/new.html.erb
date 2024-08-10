@@ -1,8 +1,40 @@
 <div id="container">
   <div id="left-section">
+    <img
+      src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/HealthyTalk-VickiTurner.jpg"
+      alt="contact us"
+    />
   </div>
   <div id="right-section">
     <h1>Don't be shy, get in touch!</h1>
     <%= render "form", contact: @contact %>
   </div>
 </div>
+
+
+ 
+<div id="contact-details">
+  <h1>Want to talk to us direct?</h1>
+  <h1>No Problem!</h1>
+  <div id="detail-sections">
+    <div id="phone">
+      <h2>Call us</h2>
+      <p>Give us a call - always happy to talk to you!</p>
+      <p>123-456-7890</p>
+    </div>
+    <div id="email">
+      <h2>Email us</h2>
+      <p>Drop us an note - we'll get back to you asap!</p>
+      <p>hello@priyanka.co.uk</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  gsap.from("#left-section img", {
+    duration: 2,
+    y: 100,
+    opacity: 0,
+    ease: "power2.out",
+  });
+</script>

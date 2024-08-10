@@ -63,7 +63,7 @@ body {
   z-index: 1;
 }
 
-#page1 img {
+img {
   border-radius: 10%;
 }
 
@@ -153,7 +153,7 @@ body {
 #nav #part2 a:nth-last-child(1) h5 {
   position: relative;
   z-index: 1;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 #nav #part2 a:nth-last-child(1):hover #orange {
@@ -252,6 +252,23 @@ body {
 #container #left-section {
   width: 30%;
   min-height: 400px;
+  position: relative;
+}
+
+#left-section img {
+  height: 30rem;
+  width: 25em;
+  position: absolute;
+  left: -20%;
+  top: -5%;
+}
+
+#left-section img {
+  transition: margin 0.8s ease;
+}
+
+#left-section img:hover {
+  margin-top: -0.625rem;
 }
 
 #container #right-section {
