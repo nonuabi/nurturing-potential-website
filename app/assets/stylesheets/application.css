@@ -23,12 +23,10 @@ html,
 body {
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
 }
 #main {
   height: 100%;
   width: 100%;
-  /* position: relative; */
 }
 
 #page1 {
@@ -54,7 +52,7 @@ body {
   position: absolute;
   width: 35%;
   height: 2vh;
-  background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+  background-image: url(https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/underline-orange.svg);
   background-size: cover;
   bottom: -1.3vh;
   left: 50%;
@@ -135,7 +133,7 @@ body {
   position: absolute;
   top: 0;
   left: -100%;
-  background-color: springgreen;
+  background-color: orange;
   transition: left 0.4s ease;
 }
 
@@ -150,7 +148,76 @@ body {
 }
 
 #page2 {
-  height: 70vh;
+  height: 50%;
   width: 100%;
-  background-color: red;
+  background-color: #000;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page2 h5 {
+  font-size: 1.188rem;
+  font-weight: 500;
+  position: relative;
+}
+#page2 h5::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 23%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+#page2 h1 {
+  font-size: 2rem;
+  width: 70%;
+  text-align: center;
+  font-weight: 100;
+  margin: 1.625rem 0;
+  position: relative;
+}
+
+#page2 h1::after {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 190px;
+  top: -20px;
+  right: 10.5%;
+  background-image: url(https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/circle-orange.svg);
+}
+
+#about-us {
+  display: flex;
+  align-items: center;
+}
+
+#about-us > h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#greendiv {
+  border-color: rgb(58, 43, 226);
+  border-radius: 50px;
+  width: 65px;
+  height: 30px;
+  border: 1px solid white;
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us img {
+  rotate: -90deg;
+  height: 25px;
 }

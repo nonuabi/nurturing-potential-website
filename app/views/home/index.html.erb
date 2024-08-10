@@ -17,14 +17,36 @@
   </div>
   <section id="page1">
     <h1> Empowering Growth & Learning </h1>
-    <img src="https://i.pinimg.com/564x/1c/51/ca/1c51caaf245a8ec800919b976b99e767.jpg" alt="img2" id="img1">
-    <img src="https://i.pinimg.com/564x/25/b6/b0/25b6b0603f8f3c3f9eb379953448bba3.jpg" alt="img1" id="img2">
+    <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/img1.jpg" alt="img2" id="img1">
+    <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/tinkle_cover.jpeg" alt="img1" id="img2">
   </section>
   <section id="page2">
+    <h5>
+      At Nurturing Potential Limited,
+    </h5>
+    <h1>
+      our mission is to help every person
+      reach their full potential.
+      <br>
+      We do this by offering personalized support and encouraging group sessions.
+      <br>
+      Our commitment is to be with you every step of the way, guiding you to success.
+    </h1>
+    <div id="about-us">
+      <h4>About us</h4>
+      <div id="greendiv">
+        <%= image_tag("icons8-arrow-50.png", alt: "arrow") %>
+      </div>
+    </div>
   </section>
 </div>
 <script>
+  // Page 1 animations
   gsap.from("#img1", {duration: 2, x: -200, opacity: 0, scale: 0.5});
   gsap.from("#img2", {duration: 2, x: 200, opacity: 0, scale: 0.5});
   gsap.from("#page1 > h1", {duration: 2, y: -200, opacity: 0, scale: 0.5});
+
+  // Page 2 animations
+  gsap.from("#page2 > h5", {opacity: 0, duration: 2,
+  scrollTrigger: {trigger: "#page2 > h5", scrollerf: "body", start: "top 80%"}});
 </script>
