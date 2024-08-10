@@ -1,45 +1,27 @@
-<div id="main">
-  <div id="nav">
-    <h1>Nurturing Potential Ltd</h1>
-    <div class="" id="part2">
-      <a href="#">About us</a>
-      <a href="#">Services</a>
-      <a href="#">Pricing</a>
-      <a href="#">FAQ</a>
-      <a href="#">
-        <h5>
-          Contact us
-        </h5>
-        <div id="green">
-        </div>
-      </a>
+<section id="page1">
+  <h1 id="heading1"> Empowering Growth & Learning </h1>
+  <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/img1.jpg" alt="img2" id="img1">
+  <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/tinkle_cover.jpeg" alt="img1" id="img2">
+</section>
+<section id="page2">
+  <h5>
+    At Nurturing Potential Limited,
+  </h5>
+  <h1>
+    our mission is to help every person
+    reach their <span> full potential</span>.
+    <br>
+    We do this by offering personalized support and encouraging group sessions.
+    <br>
+    Our commitment is to be with you every step of the way, guiding you to success.
+  </h1>
+  <div id="about-us">
+    <h4>About us</h4>
+    <div id="greendiv">
+      <%= image_tag("icons8-arrow-50.png", alt: "arrow") %>
     </div>
   </div>
-  <section id="page1">
-    <h1 id="heading1"> Empowering Growth & Learning </h1>
-    <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/img1.jpg" alt="img2" id="img1">
-    <img src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/tinkle_cover.jpeg" alt="img1" id="img2">
-  </section>
-  <section id="page2">
-    <h5>
-      At Nurturing Potential Limited,
-    </h5>
-    <h1>
-      our mission is to help every person
-      reach their <span> full potential</span>.
-      <br>
-      We do this by offering personalized support and encouraging group sessions.
-      <br>
-      Our commitment is to be with you every step of the way, guiding you to success.
-    </h1>
-    <div id="about-us">
-      <h4>About us</h4>
-      <div id="greendiv">
-        <%= image_tag("icons8-arrow-50.png", alt: "arrow") %>
-      </div>
-    </div>
-  </section>
-</div>
+</section>
 <script>
   // Page 1 animations
   gsap.from("#img1", {duration: 2, x: -200, opacity: 0, scale: 0.5});
