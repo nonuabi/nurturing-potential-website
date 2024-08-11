@@ -310,6 +310,9 @@ img {
 #form-group input:focus {
   outline: none;
 }
+#form-group textarea:focus {
+  outline: none;
+}
 
 #form-group textarea {
   width: 70%;
@@ -402,7 +405,49 @@ img {
   margin-bottom: 1rem;
 }
 
+#detail-sections a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
 #detail-sections #phone-number,
 #email-address {
   margin-top: 1rem;
+}
+
+#detail-sections #arrow {
+  width: 55px;
+  height: 30px;
+  padding: 8px 16px;
+  border: 1px solid rgba(140, 140, 140, 0.768);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+#detail-sections #arrow #orange {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: -110%;
+  background-color: orange;
+  transition: left 0.4s ease;
+}
+
+#detail-sections a:hover #arrow > #orange {
+  left: 0;
+  z-index: -1;
+}
+
+#detail-sections img {
+  height: 25px;
+  width: 25px;
 }
