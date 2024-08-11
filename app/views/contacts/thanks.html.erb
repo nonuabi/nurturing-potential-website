@@ -1,0 +1,96 @@
+<div id="container">
+  <div id="left-section">
+    <img
+      src="https://nurturing-potential-website.s3.ap-south-1.amazonaws.com/images/thank-you.jpeg"
+      alt="contact us"
+    />
+  </div>
+  <div id="right-section">
+    <h1>Thank you for your enquiry</h1>
+    <p>We'll get back to you as soon as possible.</p>
+    <a href="/" id="back-home"
+    >Back to Home
+      <span id="arrow">
+        <%= image_tag("icons8-arrow-50-black.png", alt: "arrow") %>
+        <div id="orange">
+        </div>
+      </span>
+    </a>
+  </div>
+</div>
+
+<section id="contact-details-section">
+  <div id="contact-details">
+    <div id="headings">
+      <h1 id="contact-heading"
+      >Want to talk to us <span>direct?</span></h1>
+      <h1 id="contact-subheading">No Problem!</h1>
+    </div>
+    <div id="detail-sections">
+      <div id="phone">
+        <h2>Call us</h2>
+        <p>Give us a call - always happy to talk to you!</p>
+        <a href="tel:+447448627775" id="phone-number">+44 1234 567890
+          <span id="arrow">
+            <%= image_tag("icons8-arrow-50-black.png", alt: "arrow") %>      
+            <div id="orange">
+            </div>
+          </span>
+        </a>
+      </div>
+      <div id="phone">
+        <h2>Text us</h2>
+        <p>Reach out via WhatsApp - we're here to chat!</p>
+         <a href="https://wa.me/+447448627775?text=Hello%2C%20I%20have%20a%20question%20about%20your%20courses%20and%20learning%20resources." target="_blank" id="phone-number">+44 1234 567890
+          <span id="arrow">
+            <%= image_tag("icons8-arrow-50-black.png", alt: "arrow") %>      
+            <div id="orange">
+            </div>
+          </span>
+         </a>
+      </div>
+      <div id="email">
+        <h2>Email us</h2>
+        <p>Drop us an note - we'll get back to you asap!</p>
+        <a id="email-address" href="mailto:hello@priyanka.co.uk" >hello@priyanka.co.uk
+          <span id="arrow">
+            <%= image_tag("icons8-arrow-50-black.png", alt: "arrow") %>    
+            <div id="orange">
+            </div>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  gsap.from("#left-section img", {
+    duration: 2,
+    y: 100,
+    opacity: 0,
+    ease: "power2.out",
+  });
+
+  gsap.from("#headings h1", {
+    duration: 2,
+    y: 100,
+    opacity: 0,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#headings",
+      start: "top 80%",
+    },
+  });
+
+  gsap.from("#detail-sections div", {
+    duration: 2,
+    y: 100,
+    opacity: 0,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#detail-sections",
+      start: "top 80%",
+    },
+  });
+</script>

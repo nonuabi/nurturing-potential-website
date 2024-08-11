@@ -279,10 +279,15 @@ img {
 
 #container #right-section {
   width: 50%;
+  height: 485px;
   padding: 20px 100px 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
-#container #right-section h1 {
+#right-section h1 {
   font-size: 2rem;
   font-weight: 300;
 }
@@ -290,7 +295,7 @@ img {
 #right-section #form-group {
   display: flex;
   flex-direction: row;
-  margin-top: 2.5rem;
+  margin-top: 1.25rem;
   text-wrap: nowrap;
   align-items: center;
   padding-bottom: 1rem;
@@ -450,4 +455,46 @@ img {
 #detail-sections img {
   height: 25px;
   width: 25px;
+}
+
+#right-section #back-home {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+#right-section #back-home img {
+  height: 25px;
+  width: 25px;
+}
+
+#right-section #back-home #arrow {
+  width: 55px;
+  height: 30px;
+  padding: 8px 16px;
+  border: 1px solid rgba(140, 140, 140, 0.768);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+#right-section #back-home #arrow #orange {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: -110%;
+  background-color: orange;
+  transition: left 0.4s ease;
+}
+
+#right-section #back-home:hover #arrow > #orange {
+  left: 0;
+  z-index: -1;
 }

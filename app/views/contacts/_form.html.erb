@@ -1,21 +1,11 @@
 <%= form_with(model: contact) do |form| %>
-  <% if contact.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
-      <ul>
-        <% contact.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
   <div id="form-group">
-    <%= form.label :name, "Name & Surname",  style: "display: block" %>
-    <%= form.text_field :name, placeholder: "Who are you?" %>
+    <%= form.label :name, "Name & Surname", style: "display: block" %>
+    <%= form.text_field :name, placeholder: "Who are you?", required: true %>
   </div>
   <div id="form-group">
     <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email, placeholder: "How we can talk to you?" %>
+    <%= form.text_field :email, placeholder: "How we can talk to you?", required: true %>
   </div>
   <div id="form-group">
     <%= form.label :phone, "Phone Number", style: "display: block" %>
