@@ -15,7 +15,7 @@ class ContactsController < ApplicationController
     contact = Contact.new(contact_params)
 
     if contact.save
-      flash[:notice] = "Contact was successfully created."
+      ContactMailer.welcome_email.deliver_now
       redirect_to thank_you_path()
     else
       flash[:error] = "Contact was not created."
